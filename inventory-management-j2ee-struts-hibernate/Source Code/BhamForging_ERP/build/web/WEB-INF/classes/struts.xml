@@ -1,0 +1,93 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <result-types>
+		<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+	</result-types>
+        
+        <action name="login" class="Action.Authentication">
+            <result  name="success" type="tiles">homeTile</result>
+        </action>
+         <action name="home" >
+            <result type="tiles">homeTile</result>
+        </action>
+        <action name="stock" >
+            <result type="tiles">stockTile</result>
+            
+        </action>
+               <action name="addStock" class="Action.StockManagement" method="fillSupplierId">
+                  <result type="tiles">addStockTile</result>
+               </action>
+                <action name="fillSupplierDetails" class="Action.StockManagement" method="fillSupplierDetails">
+                  <result type="tiles">addStockTile</result>
+                </action>
+                  <action name="fillSupplierDetails1" class="Action.StockManagement" method="fillSupplierDetails1">
+                  <result type="tiles">addStockTile</result>
+                </action>
+                 <action name="fillItemDetails" class="Action.StockManagement" method="fillItemDetails">
+                  <result type="tiles">addStockTile</result>
+                </action>
+                
+                   <action name="addStockInfo" class="Action.StockManagement" method="addStock">
+                     <result  name="success" type="tiles">addStockTile</result>
+                     </action>
+             
+               
+               <action name="viewStock" class="Action.StockManagement" method="viewStock">
+                  <result type="tiles">viewStockTile</result>
+               </action>
+               <action name="viewStockNext" class="Action.StockManagement" method="viewNext">
+                  <result type="tiles">viewStockTile</result>
+               </action>
+               <action name="updateStock" >
+                  <result type="tiles">updateStockTile</result>
+               </action>
+               <action name="deleteStock" >
+                  <result type="tiles">deleteStockTile</result>
+               </action>
+         <action name="orders" >
+            <result type="tiles">orderTile</result>
+        </action>
+                <action name="addOrder" class="Action.OrderManagement" method="fillCompanyNames">
+                  <result type="tiles">addOrderTile</result>
+               </action>
+                             <action name="addOrderInfo" class="Action.OrderManagement" method="addOrder">
+                             <result  name="success" type="tiles">addOrderTile</result>
+                             </action>
+                             <action name="fillCompanyDetails" class="Action.OrderManagement" method="fillCompanyDetails">
+                              <result type="tiles">addOrderTile</result>
+                             </action>
+                <action name="viewOrder" class="Action.OrderManagement" method="">
+                  <result type="tiles">viewOrderTile</result>
+               </action>
+                <action name="updateOrder" class="Action.OrderManagement" method="">
+                  <result type="tiles">updateOrderTile</result>
+               </action>
+                               <action name="updateProgress" class="Action.OrderManagement" method="updateProgress">
+                              <result type="tiles">updateOrderTile</result>
+                              </action>
+                <action name="viewOrderProgressHistory" class="Action.OrderManagement" method="">
+                  <result type="tiles">viewOrderProgressHistoryTile</result>
+               </action>
+                              
+                <action name="cancelOrder" class="Action.OrderManagement" method="">
+                  <result type="tiles">cancelOrderTile</result>
+               </action>
+        
+         <action name="payments" >
+            <result type="tiles">paymentTile</result>
+        </action>
+        
+        
+        
+        
+       
+      
+        
+    </package>
+</struts>

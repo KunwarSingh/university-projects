@@ -1,0 +1,83 @@
+.registerForm
+  {
+  	width: 500px;
+  	border: 1px solid black;
+    background-color:white;
+	padding-bottom:20px;
+  }
+  .signUpBtn
+  {
+  	width: 100%;
+  	background-color: #cb202d;
+  	color: white;
+  }
+  .registerTitle
+  {
+background-color: #cb202d;
+color: white;
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+padding-top:5px;
+height:40px;
+
+  }
+  .regCloseBtn
+  {
+  	float: right;
+  	margin-right: 5px;
+	padding-top:5px;
+  }
+  
+  
+ /*    Login */
+ .logInBtn
+  {
+    width: 100%;
+    background-color: #cb202d;
+  	color: white;
+  }
+  .loginFormText
+  {
+  	text-align: left;
+  	color: #9a9a9a;
+  	padding-left: 32px;   
+    font-style: bold;
+    font-size: 15px;
+	
+
+  }
+  .loginForm
+  {
+  	border: 1px solid black;
+  	width: 500px;
+    background-color:white;
+	padding-bottom:20px;
+  }
+  .loginTitle
+  {
+  	text-align: center;
+  	background-color: #cb202d;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+	height:40px;
+	padding-top:5px;
+  }
+  .lCloseBtn
+  {
+  	float: right;
+  	margin-right: 5px;
+	padding-top:5px;
+  }
+  .regHere button
+  {
+    width: 150px;
+    font-size:16px;
+	
+  } 
+  .regHere{
+  font-size:18px;
+  color: #9a9a9a;
+  }

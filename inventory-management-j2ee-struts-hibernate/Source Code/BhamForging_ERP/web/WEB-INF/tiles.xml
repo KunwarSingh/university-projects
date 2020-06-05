@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+      <definition name="homeTile" template="/MasterPage.jsp">
+        <put-attribute name="header" value="/header.jsp"/>
+        <put-attribute name="leftBar" value="/leftBar.jsp"/>
+        <put-attribute name="bodyContent" value="/home.jsp"/>
+        <put-attribute name="rightBar" value="/rightBar.jsp"/>
+        <put-attribute name="footer" value="/footer.jsp"/>
+        <put-attribute name="bodyMenu" value=""/>
+    </definition>
+    
+     <definition name="stockTile" extends="homeTile">
+        <put-attribute name="bodyContent" value="/stockPage.jsp"/>
+        <put-attribute name="bodyMenu" value="/stockMenu.jsp"/>
+    </definition>
+                    <definition name="addStockTile" extends="stockTile">
+                         <put-attribute name="bodyContent" value="/addStockPage.jsp"/>                        
+                    </definition>
+                    <definition name="viewStockTile" extends="stockTile">
+                         <put-attribute name="bodyContent" value="/viewStockPage.jsp"/>                        
+                    </definition>
+                    <definition name="updateStockTile" extends="stockTile">
+                         <put-attribute name="bodyContent" value="/updateStockPage.jsp"/>                        
+                    </definition>
+                    <definition name="deleteStockTile" extends="stockTile">
+                         <put-attribute name="bodyContent" value="/deleteStockPage.jsp"/>                        
+                    </definition>
+     <definition name="orderTile" extends="homeTile">
+        <put-attribute name="bodyContent" value="/orderPage.jsp"/>
+        <put-attribute name="bodyMenu" value="/orderMenu.jsp"/>
+    </definition>
+                    <definition name="addOrderTile" extends="orderTile">
+                         <put-attribute name="bodyContent" value="/addOrderPage.jsp"/>                        
+                    </definition>
+                    <definition name="viewOrderTile" extends="orderTile">
+                         <put-attribute name="bodyContent" value="/viewOrderPage.jsp"/>                        
+                    </definition>
+                    <definition name="updateOrderTile" extends="orderTile">
+                         <put-attribute name="bodyContent" value="/updateOrderPage.jsp"/>                        
+                    </definition>
+                    <definition name="viewOrderProgressHistoryTile" extends="orderTile">
+                         <put-attribute name="bodyContent" value="/viewOrderProgressHistoryPage.jsp"/>                        
+                    </definition>
+                    <definition name="cancelOrderTile" extends="orderTile">
+                         <put-attribute name="bodyContent" value="/cancelOrderPage.jsp"/>                        
+                    </definition>
+
+     <definition name="paymentTile" extends="homeTile">
+        <put-attribute name="bodyContent" value="/payments.jsp"/>
+        <put-attribute name="bodyMenu" value="/paymentMenu.jsp"/>
+    </definition>
+    
+    
+  
+    
+    
+    
+</tiles-definitions>

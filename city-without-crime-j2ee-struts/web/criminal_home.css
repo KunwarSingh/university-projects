@@ -1,0 +1,161 @@
+.criminalmain{
+
+   background: -moz-linear-gradient(top, #302226, #4A4344, #302226);
+    background: -o-linear-gradient(top, #302226, #4A4344, #302226);
+    background: -webkit-linear-gradient(top, #302226, #4A4344, #302226);
+   
+	width:1080px;
+        height:1000px;
+
+
+}
+
+
+.popular{
+float:left;
+display:block;
+text-align:center;
+width:397px;
+margin:2px;
+margin-top:0px;
+height:280px;
+border:1px solid #000000;
+
+font-size: 20px;
+color:#000000;
+display:block;
+border-radius:10px;
+position:relative;
+
+}
+
+.category{
+    position:relative;
+    float:left;
+display:block;
+margin-left:-15px;
+    width:280px;
+    height:500px;
+	text-align:center;
+   
+    border-radius:0px 0px 5px 5px;
+    -moz-border-radius:0px 0px 5px 5px;
+    -o-border-radius:0px 0px 5px 5px;
+    -webkit-border-radius:0px 0px 5px 5px;
+    z-index:10;
+    background:#302226;
+    background: -moz-linear-gradient(top, #302226, #4A4344, #302226);
+    background: -o-linear-gradient(top, #302226, #4A4344, #302226);
+    background: -webkit-linear-gradient(top, #302226, #4A4344, #302226);
+ 
+
+
+}
+.category li
+{
+    display:block;
+    padding:5px 10px 5px 10px;
+    
+}
+.category li a
+{
+    text-decoration:none;
+    color:#CCCCCC;
+}
+.category li a:hover
+{
+    color:#FFFFFF;
+    font-size:22px;
+    text-shadow:1px 1px 2px #CCCCCC;
+}
+.advsearch
+{
+float:right;
+width:230px;
+margin-right:-15px;
+
+}
+.field{
+width:270px;
+font-size:20px;
+text-align:center;
+display:block;
+}
+.searchInputField{
+
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:20px;
+		border:1px solid #00000F; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		width:240px;
+		height:30px;
+	
+}
+.advsearch_button{	margin: 0;
+		
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:20px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		height:40px;
+		width:270px;
+		}
+		.advsearch_button:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	
+	.searchArea{
+	
+
+float:left;
+display:block;
+text-align:center;
+width:800px;
+margin:2px;
+margin-top:0px;
+height:670px;
+border:1px solid #000000;
+
+font-size: 20px;
+color:#000000;
+
+border-radius:10px;
+position:absolute;
+top:285px;
+
+
+
+
+	
+	
+	}
+        
+        
+        .criminalImage{
+            float:left;
+            border-style: dashed;
+            width:200px;
+            height:250px;
+            background-color: #f0000f;
+            margin:30px;
+            
+            
+        }
+	
